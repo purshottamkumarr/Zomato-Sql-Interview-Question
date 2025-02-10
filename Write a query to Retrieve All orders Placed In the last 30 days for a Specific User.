@@ -1,0 +1,3 @@
+select * from Orders
+where UserId = 'U123'
+and OrderDate>=DATESUB(CURDATE(),INTERVAL 30 DAYS);
