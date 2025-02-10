@@ -1,0 +1,5 @@
+select Restaurantid,AVG(rating) as Total_avg_rating
+from ratings
+group by Restaurantid
+order by Total_avg_rating Desc
+limit 10
