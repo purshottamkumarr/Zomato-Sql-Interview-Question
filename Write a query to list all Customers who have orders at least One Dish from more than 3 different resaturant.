@@ -1,0 +1,3 @@
+select userid from orders
+group by userid
+having count(Distinct Resaturantid)>3
