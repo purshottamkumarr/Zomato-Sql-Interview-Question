@@ -1,0 +1,6 @@
+select Dishname, sum(quantity) as Total_order
+from orders
+where RestaurantId = 'R101'
+group by Dishname
+order by Total_order desc
+limit 5
