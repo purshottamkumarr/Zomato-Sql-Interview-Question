@@ -1,0 +1,4 @@
+select sum(Amount) as Total_revenue
+from orders
+where orderdate>=DATE_FORMAT(CUR_DATE()-INTERVAL 1 MONTH, '%Y-%M-01')
+and oredrdate<(CUR_DATE(),'%Y-%M-01);
