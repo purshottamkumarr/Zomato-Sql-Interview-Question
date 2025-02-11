@@ -1,0 +1,5 @@
+select Restaurant_id,Avg(delivery_time) as Avgdeliverytime
+from Orders
+group by Restaurant_id
+order by Avgdeliverytime
+limit 5
