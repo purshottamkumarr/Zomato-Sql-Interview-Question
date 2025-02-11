@@ -1,0 +1,3 @@
+select cusine sum(Amount) as total_revenue
+from Orders
+group by cusine order by total_revenue desc
