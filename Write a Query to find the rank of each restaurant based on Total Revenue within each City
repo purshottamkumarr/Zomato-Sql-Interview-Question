@@ -1,0 +1,4 @@
+select restaurant_id,city,sum(Amount) as Total_revenue,
+Rank()over(partition by city order by sum(Amount) as Rank
+from orders
+group by restaurant_id,city
